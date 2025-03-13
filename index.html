@@ -1,183 +1,357 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Manikanta Sakalabakthula</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Techdit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- ✅ Header Section -->
-    <header>
-        <div class="logo">Manikanta<span>.</span></div>
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul> 
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: "poppins", sans-serif;
+            
+            background-image: linear-gradient(150deg, #c4b6fd, #93acfc);
+        }
+        header{
+            color: #0a58ca !important;
+        }
+        section article h1{
+            padding-top: 150px;
+        }
+        section aside img{
+            height: 600px;
+        }
+        section aside .image{
+            width: 400px;
+            height: 400px;
+        }
+        .cards{
+            height: 250px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <header class="container d-flex my-4 fw-semibold align-items-center">
+        <div class="fs-2">Techdit</div>
+        <nav class="ms-auto">
+            <ul class="list-unstyled d-flex align-items-center gap-5 fs-5">
+                <li><a href="#home" class="text-decoration-none">Home</a></li>
+                <li><a href="#about" class="text-decoration-none">About</a></li>
+                <li><a href="#product" class="text-decoration-none">Product</a></li>
+                <a href="#contact"><button type="submit" class="btn btn-primary">Contact</button></a>
+            </ul>
         </nav>
-        <button class="contact"><a href="#">Contact Me</a></button>
-
-        <input type="checkbox" id="menu-toggle">
-
-            <!-- ✅ Toggle Button -->
-            <label for="menu-toggle" class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-xmark"></i>
-            </label>
-
-            <!-- ✅ Dropdown Menu -->
-            <div class="dropdown">
-                <ul class="link">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact" class="btn">Contact</a></li>
-                </ul>
-            </div>
     </header>
 
-    <!-- ✅ Main Section -->
-    <main>
-        <!-- ✅ Home Section -->
-        <section class="home" id="home">
+    <main class="d-flex flex-column gap-5">
 
-            <div class="image">
-                <img src="assets/images/profile-img.jpg" alt="Profile">
-            </div>
 
-            <p class="name">Hi! I'm Manikanta Sakalabakthula👋</p>
-            <h1 class="dev">Frontend Developer</h1>
-            <p class="description">I'm a Aspiring Frontend Developer with a passion for crafting visually appealing and user-friendly websites. Proficient in HTML, CSS, eager to learn and implement modern web technologies.</p>
-
-            <div class="button">
-                <a class="contact-me" href="#">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
-                <a class="resume" href="https://drive.google.com/file/d/1eaRB3NGHh3TqtWXdc8P1E5alKnoLgqT-/view?usp=sharing" target="_blank">My resume <i class="fa-solid fa-download"></i></a>
-            </div>
-        </section>
-        
-        <!-- ✅ About Section -->
-        <section class="about" id="about">
-            <div class="about-heading">About me</div>
-            <div class="about-description">
-                <img src="assets/images/user-image.jpg" alt="user-image">
-                <p class="about-me">
-                    Hello! I'm Manikanta, a passionate Frontend Developer. I specialize in HTML, CSS to build responsive and user-friendly web applications. Currently, I'm enhancing my skills by working on real-time projects and templates. I have a strong foundation in web development concepts and problem-solving. I enjoy creating visually appealing and efficient websites with a focus on user experience. I'm also exploring backend development to build full-stack applications. My goal is to become a skilled developer and contribute to innovative projects. Always eager to learn and adapt to the latest technologies!
-                </p>
-            </div>
-            
+        <section class="container d-flex mt-5" id="home">
+            <article class="">
+                <h1 class="display-4 fw-bold">
+                    <span class="text-primary">Discover </span>the Future of Tech
+                </h1>
+                <p class="mt-1">Explore our latest gadgets and accessories designed to elevate your digital lifestyle.</p>
+                <button type="button" class="btn btn-primary px-4 py-2 fs-5 fw-semibold">Shop Now</button>
+            </article>
+            <aside>
+                <img src="/assets/hero.webp" alt="hero">
+            </aside>
         </section>
 
-        <!-- ✅ Education Section -->
-        <section class="education" id="education">
-            <div class="education-name">Education</div>
-            <div class="education-details">
-                <div class="education-details-item">
-                    <div class="dot"></div>
-                    <div class="education-details-name">Kakinada Institute Of Engineering And Technology</div>
-                    <div class="education-details-spec">BTech (CSE- Data Science)</div>
-                    <div class="education-details-year">2020-2024</div>
+
+        <section class=" container d-flex gap-5 justify-content-center align-items-center" id="about">
+            <aside class="mt-5 pt-5">
+                <img class="image" src="/assets/img-1.webp" alt="img-1">
+            </aside>
+
+            <article class="">
+                <h1 class="text-primary fw-semibold ms-5">About Techdit Hub</h1>
+                <p class="">Techdit Hub is at the forefront of technology innovation, curating a collection of the latest gadgets and accessories to elevate your digital lifestyle. We believe in the power of technology to enhance everyday experiences, and our mission is to bring cutting-edge products to tech enthusiasts around the world.</p>
+                <p>With a focus on quality, functionality, and style, Techdit Hub sources products from leading manufacturers and emerging tech innovators. Our team of experts carefully selects each item to ensure it meets our high standards and aligns with the ever-evolving needs of our diverse community of customers.</p>
+            </article>
+        </section>
+
+        <section class="container">
+            <h1 class="text-center fs-1 fw-semibold text-primary">Key Features</h1>
+            <div class="d-flex gap-5 mt-5">
+                <div class="cards border border-0 rounded bg-light px-5 py-5">
+                    <i class="far fa-lightbulb fs-2"></i>
+                    <h2>Innovative Technology</h2>
+                    <p>Explore products featuring the latest and most innovative technologies.</p>
                 </div>
-        
-                <div class="education-details-item">
-                    <div class="dot"></div>
-                    <div class="education-details-name">Sri Chaitanya Junior College</div>
-                    <div class="education-details-spec">MPC</div>
-                    <div class="education-details-year">2018-2020</div>
+                <div class="cards border border-0 rounded bg-primary px-5 py-5">
+                    <i class="fas fa-shield-alt fs-2"></i>
+                    <h2>Quality Assurance</h2>
+                    <p> Our team ensures that every product meets high-quality performance.</p>
                 </div>
-        
-                <div class="education-details-item">
-                    <div class="dot"></div>
-                    <div class="education-details-name">Geetanjali Public School</div>
-                    <div class="education-details-spec">Class - X</div>
-                    <div class="education-details-year">2017-2018</div>
+                <div class="cards border border-0 rounded bg-light px-5 py-5">
+                    <i class="fas fa-hourglass-half fs-2"></i>
+                    <h2>Timely Delivery</h2>
+                    <p>Experience prompt and reliable delivery services to get your tech gear right now.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ✅ Skills Section -->
-        <section class="skills" id="skills">
-            <div class="skills-name">Skills</div>
-            <div class="skills-card">
-                <div class="skills-card-items">
-                    <i class="fab fa-html5 html"></i>
-                    <p class="html">HTML5</p>
+        <section class="container my-5" id="product">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-12">
+                <h2 class="fs-1 fw-bold text-primary text-center pb-5">
+                  Our Products
+                </h2>
+                <ul
+                  class="nav nav-tabs d-flex flx-wrap justify-content-center"
+                  id="myTab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active me-md-3 me-1 text-dark"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="home-tab-pane"
+                      aria-selected="true"
+                    >
+                      All
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link me-md-3 me-1 text-dark"
+                      id="vr"
+                      data-bs-toggle="tab"
+                      data-bs-target="#vr-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-tab-pane"
+                      aria-selected="false"
+                    >
+                      Virtual Reality
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link me-md-3 me-1 text-dark"
+                      id="headphones-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#headphones-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="contact-tab-pane"
+                      aria-selected="false"
+                    >
+                      Headphones
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                    tabindex="0"
+                  >
+                    <div class="row g-4 mt-5 justify-content-center align-items-center">
+                      <div class="col-12 col-md-4">
+                        <img
+                          src="assets/headphones-1.webp"
+                          alt=""
+                          class="img-fluid  d-block mx-auto"
+                        />
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <img src="assets/vr-1.webp" alt="" class="img-fluid  d-block mx-auto" />
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <img src="assets/vr-2.webp" alt="" class="img-fluid  d-block mx-auto" />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="vr-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                    tabindex="0"
+                  >
+                    <div class="row mt-5 g-4">
+                      <div class="col-12 col-md-4">
+                        <img src="assets/vr-1.webp" alt="" class="img-fluid" />
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <img src="assets/vr-2.webp" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="headphones-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="headphones-tab"
+                    tabindex="0"
+                  >
+                    <div class="row g-4 mt-5">
+                      <div class="col-12 col-md-4">
+                        <img
+                          src="assets/headphones-1.webp"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="skills-card-items css">
-                    <i class="fab fa-css3-alt"></i>
-                    <p class="css">CSS3</p>
-                </div>
-                <div class="skills-card-items boo">
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <p class="boo">Bootstrap5</p>
-                </div>
-                <div class="skills-card-items python">
-                    <i class="fa-brands fa-python"></i>
-                    <p class="python">Python</p>
-                </div>
+              </div>
             </div>
-        </section>
+          </section>
 
-        <!-- ✅ Project Section -->
-        <section class="projects" id="projects">
-            <div class="projects-name">Projects</div>
-            <div class="projects-card">
-                <div class="projects-card-items">
-                    <h1>PORTFOLIO</h1>
-                    <p>A simple portfolio project using HTML and CSS showcases your skills and projects in a clean and responsive layout. Designed with a modern UI for a professional look.</p>
-                    <a href="https://manikantasakalabakthula.github.io/my-portfolio/">Click Here</a>
+          <section class="container py-5 mb-5">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="fw-bold text-primary fs-1 pb-3 text-center">
+                  How it works
+                </h2>
+      
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button fs-3 text-dark fw-medium"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        How can I browse and explore products on TechGear Hub?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <p class="lead">
+                          Ordering your favorite tech gear from TechGear Hub is a
+                          breeze. Once you've found the perfect product, simply add it
+                          to your cart and proceed to checkout. Our secure and
+                          efficient checkout process allows you to review your order,
+                          enter shipping details, and choose from multiple payment
+                          options. Rest assured, your transaction is protected, and
+                          your order will be swiftly processed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed fs-3 text-dark fw-medium"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        What is the ordering process like?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <p class="lead">
+                          Ordering your favorite tech gear from TechGear Hub is a
+                          breeze. Once you've found the perfect product, simply add it
+                          to your cart and proceed to checkout. Our secure and
+                          efficient checkout process allows you to review your order,
+                          enter shipping details, and choose from multiple payment
+                          options. Rest assured, your transaction is protected, and
+                          your order will be swiftly processed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed fs-3 text-dark fw-medium"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        How does TechGear Hub ensure customer satisfaction?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <p class="lead">
+                          At TechGear Hub, customer satisfaction is our top priority.
+                          We are committed to delivering high-quality products and
+                          exceptional service. Our team carefully inspects and
+                          packages each order, ensuring it reaches you in perfect
+                          condition. Additionally, our responsive customer support is
+                          ready to assist with any inquiries or concerns you may have.
+                          Join our community of satisfied customers who trust TechGear
+                          Hub for a seamless and enjoyable shopping experience.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="projects-card-items">
-                    <h1>TECHDIT</h1>
-                    <p>Developed a responsive landing page to showcase tech gadgets with a clean UI. Designed a structured layout with high-quality visuals for an engaging user experience.</p>
-                    <a href="https://manikantasakalabakthula.github.io/Techdit/">Click Here</a>
-                </div>
+              </div>
             </div>
-        </section>
-        <section class="contacts" id="contact">
-            <div class="contact-name">Get In Touch</div>
-            <div class="contact-form">
-                <div class="contact-form-name">
-                    <input type="text" name="fname" placeholder="First Name">
-                    <input type="text" name="lname" placeholder="Second Name">
+          </section>
+
+          <section class="container" id="contact">
+            <h1 class="text-center text-primary fw-semibold">Contact Form</h1>
+            <form >
+                <span class="mb-3">
+                  <label for="fname" class="form-label">First Name</label>
+                  <input type="text" class="form-control bg-transparent border border-2 border-dark" id="fname">
+                </span>
+                <span class="mb-3">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control bg-transparent border border-2 border-dark" id="lname">
+                  </span>
+                <div class="mb-3">
+                  <label for="mail" class="form-label">Email ID</label>
+                  <input type="mail" class="form-control bg-transparent border border-2 border-dark" id="mail">
                 </div>
-                <input type="email" name="email" placeholder="abc@gmail.com">
-                <textarea cols="10" rows="8" name="message" placeholder="Write Your Comments Here...."></textarea>
-                <input type="submit" value="Submit">
-            </div>
-        </section>
-        <div class="logo">Manikanta<span>.</span></div>
-        <p class="mail">manikantas2412@gmail.com</p>
+                <div class="mb-3">
+                    <label for="cmt" class="form-label">Comments</label>
+                    <textarea cols="12" rows="5" name="comment" id="cmt" class="form-control bg-transparent border border-2 border-dark"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </section>
+      
+          <footer class="footer-section bg-primary text-light">
+            <p class="text-center py-5 mb-0">
+              &copy; 2025 Techdit. All rights reserved.
+            </p>
+          </footer>
     </main>
-
-    <!-- ✅ Footer Section -->
-     <hr>
-    <footer class="footer">
-        <div class="footer-copyright">&copy; 2025, Manikanta Sakalabakthula</div>
-        <div class="footer-links">
-            <a href="https://wa.me/8074076826" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-
-            <a href="https://www.instagram.com/mani.24_12/?igsh=cjI3bXp3N3BpOWVq" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/manikanta-sakalabakthula-199783203/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <a href="https://github.com/Manikantasakalabakthula" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-
-        </div>
-    </footer>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
